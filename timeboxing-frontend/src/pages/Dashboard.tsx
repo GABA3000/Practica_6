@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import TaskList from '../components/TaskList';
 import { Link } from 'react-router-dom';
-import Calendar from 'react-calendar'; // Importa el calendario
-import 'react-calendar/dist/Calendar.css'; // Importa los estilos del calendario
+import Calendar from 'react-calendar'; 
+import 'react-calendar/dist/Calendar.css'; 
 
 function Dashboard() {
-    const [date, setDate] = useState(new Date()); // Estado para la fecha seleccionada
+    const [date, setDate] = useState(new Date()); 
 
     const onDateChange = (selectedDate) => {
         setDate(selectedDate);
-        console.log('Fecha seleccionada:', selectedDate); // Puedes usar esto para filtrar tareas u otras funcionalidades
+        console.log('Fecha seleccionada:', selectedDate);
     };
 
     return (
